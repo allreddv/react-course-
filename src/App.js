@@ -1,11 +1,28 @@
 import './App.css';
+import Employee from './ components/Employee';
+import { useState } from 'react';
 
 function App() {
+  const [role, setRole] = useState('dev');
+  const showEmployees = true;
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Hello World</p>
-      </header>
+      {showEmployees ? (
+        <>
+          <input
+            type="text"
+            onChange={(e) => {
+              console.log(e.target.value);
+              setRole(e.target.value);
+            }}
+          />
+          <Employee name="caleb" role="Intern" />
+          <Employee name="Abby" role={role} />
+          <Employee name="John" />
+        </>
+      ) : (
+        <p>You cannot see emplyees</p>
+      )}
     </div>
   );
 }
