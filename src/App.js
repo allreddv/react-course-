@@ -1,12 +1,12 @@
 import './index.css';
-import Employee from './ components/Employee';
-import Header from './ components/Header';
+import Employee from './components/Employee';
+import Header from './components/Header';
 import Employees from './pages/Employees';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Customers from './pages/Customers';
-import Dictionary from './ components/Dictionary';
+import Dictionary from './components/Dictionary';
 import Definition from './pages/Definition';
-import NotFound from './ components/NotFound';
+import NotFound from './components/NotFound';
 import Customer from './pages/customer';
 
 function App() {

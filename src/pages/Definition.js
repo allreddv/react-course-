@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import NotFound from '../ components/NotFound';
-import DefinitionSearch from '../ components/DefinitionSearch';
+import NotFound from '../components/NotFound';
+import DefinitionSearch from '../components/DefinitionSearch';
 
 export default function Definition() {
   const [word, setWord] = useState([]);
